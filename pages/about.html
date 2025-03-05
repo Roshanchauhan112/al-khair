@@ -1,0 +1,620 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="fixed top-0 w-full z-50 bg-[#FFE4C4] p-2 sm:p-1 md:p-4 lg:p-2">
+            <div class="container mx-auto flex justify-between items-center relative">
+                <div class="text-white text-lg font-bold">
+                    <a href="/index.html">
+                        <img src="https://alkhairsociety.co.in/images/islamic_logo-removebg-preview.png" alt="Logo"
+                            class="w-16 h-16">
+                    </a>
+                </div>
+                <!-- Desktop Navigation -->
+                <div class="hidden font-semibold md:flex space-x-16">
+                    <a href="/index.html" class="text-gray-800 hover:text-gray-700">Home</a>
+                    <a href="./about.html" class="text-gray-800 hover:text-gray-700">About Us</a>
+                    <a href="/pages/alkhairbank.html" class="text-gray-800 hover:text-gray-700">Islamic Bank</a>
+                    <a href="/pages/privacypolicy.html" class="text-gray-800 hover:text-gray-700">Privacy Policy</a>
+                    <a href="/pages/contact.html" class="text-gray-800 hover:text-gray-700">Contact Us</a>
+                </div>
+                <!-- Desktop Button -->
+                <button
+                    class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded md:ml-4 hover:bg-blue-600 transition duration-300">Request
+                    Loan</button>
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 mt-2">
+                    <div class="flex flex-col space-y-2 bg-[#FFE4C4] p-4">
+                        <a href="/index.html" class="text-gray-800 hover:text-gray-700">Home</a>
+                        <a href="#" class="text-gray-800 hover:text-gray-700">About Us</a>
+                        <a href="/pages/alkhairbank.html" class="text-gray-800 hover:text-gray-700">Islamic Bank</a>
+                        <a href="/pages/privacypolicy.html" class="text-gray-800 hover:text-gray-700">Privacy Policy</a>
+                        <a href="/pages/contact.html" class="text-gray-800 hover:text-gray-700">Contact Us</a>
+                        <button
+                            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Request
+                            Loan</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative overflow-hidden py-14 pt-32">
+            <div class="container">
+                <div class="absolute inset-x-0 top-0 z-10 flex size-full items-center justify-center opacity-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1125">
+                        <mask id="b" width="2000" height="1125" x="0" y="0">
+                            <path fill="url(#a)" d="M0 0h2000v1125H0z"></path>
+                        </mask>
+                        <path fill="#fff" d="M0 0h2000v1125H0z"></path>
+                        <g stroke="#eee" stroke-width="0.6" mask="url(#b)" style="transform-origin: center center">
+                            <path fill="none"
+                                d="M0 0h111.111v111.111H0zm111.111 0h111.111v111.111H111.111zm111.111 0h111.111v111.111H222.222zm111.111 0h111.111v111.111H333.333z">
+                            </path>
+                            <path fill="#eeeeeeaf" d="M444.444 0h111.111v111.111H444.444z"></path>
+                            <path fill="none"
+                                d="M555.556 0h111.111v111.111H555.556zm111.111 0h111.111v111.111H666.667zm111.111 0h111.111v111.111H777.778zm111.111 0H1000v111.111H888.889zM1000 0h111.111v111.111H1000zm111.111 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="none"
+                                d="M1222.222 0h111.111v111.111h-111.111zm111.111 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="none" d="M1444.444 0h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeee0b" d="M1555.556 0h111.111v111.111h-111.111z"></path>
+                            <path fill="none" d="M1666.667 0h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeeed1" d="M1777.778 0h111.111v111.111h-111.111z"></path>
+                            <path fill="none" d="M1888.889 0H2000v111.111h-111.111zM0 111.111h111.111v111.111H0z">
+                            </path>
+                            <path fill="#eeeeee1c" d="M111.111 111.111h111.111v111.111H111.111z"></path>
+                            <path fill="none" d="M222.222 111.111h111.111v111.111H222.222z"></path>
+                            <path fill="#eeeeee2b" d="M333.333 111.111h111.111v111.111H333.333z"></path>
+                            <path fill="#eeeeeec2" d="M444.444 111.111h111.111v111.111H444.444z"></path>
+                            <path fill="none" d="M555.556 111.111h111.111v111.111H555.556z"></path>
+                            <path fill="#eeeeeeef" d="M666.667 111.111h111.111v111.111H666.667z"></path>
+                            <path fill="none"
+                                d="M777.778 111.111h111.111v111.111H777.778zm111.111 0H1000v111.111H888.889z">
+                            </path>
+                            <path fill="#eeeeee77" d="M1000 111.111h111.111v111.111H1000z"></path>
+                            <path fill="#eeeeeeea" d="M1111.111 111.111h111.111v111.111h-111.111z"></path>
+                            <path fill="none"
+                                d="M1222.222 111.111h111.111v111.111h-111.111zm111.111 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="none"
+                                d="M1444.444 111.111h111.111v111.111h-111.111zm111.112 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="none"
+                                d="M1666.667 111.111h111.111v111.111h-111.111zm111.111 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="none"
+                                d="M1888.889 111.111H2000v111.111h-111.111zM0 222.222h111.111v111.111H0zm111.111 0h111.111v111.111H111.111z">
+                            </path>
+                            <path fill="#eeeeeed1" d="M222.222 222.222h111.111v111.111H222.222z"></path>
+                            <path fill="none"
+                                d="M333.333 222.222h111.111v111.111H333.333zm111.111 0h111.111v111.111H444.444zm111.112 0h111.111v111.111H555.556zm111.111 0h111.111v111.111H666.667z">
+                            </path>
+                            <path fill="#eeeeee04" d="M777.778 222.222h111.111v111.111H777.778z"></path>
+                            <path fill="#eeeeee1f" d="M888.889 222.222H1000v111.111H888.889z"></path>
+                            <path fill="none" d="M1000 222.222h111.111v111.111H1000z"></path>
+                            <path fill="#eeeeeeb1" d="M1111.111 222.222h111.111v111.111h-111.111z"></path>
+                            <path fill="none"
+                                d="M1222.222 222.222h111.111v111.111h-111.111zm111.111 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="none"
+                                d="M1444.444 222.222h111.111v111.111h-111.111zm111.112 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="none"
+                                d="M1666.667 222.222h111.111v111.111h-111.111zm111.111 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="#eeeeee47" d="M1888.889 222.222H2000v111.111h-111.111z"></path>
+                            <path fill="#eeeeeed0" d="M0 333.333h111.111v111.111H0z"></path>
+                            <path fill="#eeeeeea6" d="M111.111 333.333h111.111v111.111H111.111z"></path>
+                            <path fill="none" d="M222.222 333.333h111.111v111.111H222.222z"></path>
+                            <path fill="#eeeeeebd" d="M333.333 333.333h111.111v111.111H333.333z"></path>
+                            <path fill="none" d="M444.444 333.333h111.111v111.111H444.444z"></path>
+                            <path fill="#eeeeee72" d="M555.556 333.333h111.111v111.111H555.556z"></path>
+                            <path fill="none"
+                                d="M666.667 333.333h111.111v111.111H666.667zm111.111 0h111.111v111.111H777.778zm111.111 0H1000v111.111H888.889z">
+                            </path>
+                            <path fill="#eeeeee58" d="M1000 333.333h111.111v111.111H1000z"></path>
+                            <path fill="none" d="M1111.111 333.333h111.111v111.111h-111.111z"></path>
+                            <path fill="none"
+                                d="M1222.222 333.333h111.111v111.111h-111.111zm111.111 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="none" d="M1444.444 333.333h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeeed7" d="M1555.556 333.333h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeee57" d="M1666.667 333.333h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeee75" d="M1777.778 333.333h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeeebf" d="M1888.889 333.333H2000v111.111h-111.111z"></path>
+                            <path fill="#eeeeee16" d="M0 444.444h111.111v111.111H0z"></path>
+                            <path fill="none"
+                                d="M111.111 444.444h111.111v111.111H111.111zm111.111 0h111.111v111.111H222.222zm111.111 0h111.111v111.111H333.333zm111.111 0h111.111v111.111H444.444zm111.112 0h111.111v111.111H555.556zm111.111 0h111.111v111.111H666.667zm111.111 0h111.111v111.111H777.778z">
+                            </path>
+                            <path fill="#eeeeee5b" d="M888.889 444.444H1000v111.111H888.889z"></path>
+                            <path fill="none"
+                                d="M1000 444.444h111.111v111.111H1000zm111.111 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="#eeeeeefb" d="M1222.222 444.444h111.111v111.111h-111.111z"></path>
+                            <path fill="none" d="M1333.333 444.444h111.111v111.111h-111.111z"></path>
+                            <path fill="none"
+                                d="M1444.444 444.444h111.111v111.111h-111.111zm111.112 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="none"
+                                d="M1666.667 444.444h111.111v111.111h-111.111zm111.111 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="none" d="M1888.889 444.444H2000v111.111h-111.111zM0 555.556h111.111v111.111H0z">
+                            </path>
+                            <path fill="#eeeeee9e" d="M111.111 555.556h111.111v111.111H111.111z"></path>
+                            <path fill="#eeeeeef4" d="M222.222 555.556h111.111v111.111H222.222z"></path>
+                            <path fill="none"
+                                d="M333.333 555.556h111.111v111.111H333.333zm111.111 0h111.111v111.111H444.444zm111.112 0h111.111v111.111H555.556zm111.111 0h111.111v111.111H666.667z">
+                            </path>
+                            <path fill="#eeeeee87" d="M777.778 555.556h111.111v111.111H777.778z"></path>
+                            <path fill="none"
+                                d="M888.889 555.556H1000v111.111H888.889zm111.111 0h111.111v111.111H1000zm111.111 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="none"
+                                d="M1222.222 555.556h111.111v111.111h-111.111zm111.111 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="#eeeeeed4" d="M1444.444 555.556h111.111v111.111h-111.111z"></path>
+                            <path fill="none" d="M1555.556 555.556h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeeeec" d="M1666.667 555.556h111.111v111.111h-111.111z"></path>
+                            <path fill="none" d="M1777.778 555.556h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeeece" d="M1888.889 555.556H2000v111.111h-111.111z"></path>
+                            <path fill="none"
+                                d="M0 666.667h111.111v111.111H0zm111.111 0h111.111v111.111H111.111zm111.111 0h111.111v111.111H222.222z">
+                            </path>
+                            <path fill="#eeeeeebd" d="M333.333 666.667h111.111v111.111H333.333z"></path>
+                            <path fill="#eeeeeec7" d="M444.444 666.667h111.111v111.111H444.444z"></path>
+                            <path fill="#eeeeee2a" d="M555.556 666.667h111.111v111.111H555.556z"></path>
+                            <path fill="#eeeeee24" d="M666.667 666.667h111.111v111.111H666.667z"></path>
+                            <path fill="#eeeeeedd" d="M777.778 666.667h111.111v111.111H777.778z"></path>
+                            <path fill="none"
+                                d="M888.889 666.667H1000v111.111H888.889zm111.111 0h111.111v111.111H1000zm111.111 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="#eeeeee9a" d="M1222.222 666.667h111.111v111.111h-111.111z"></path>
+                            <path fill="none" d="M1333.333 666.667h111.111v111.111h-111.111z"></path>
+                            <path fill="none"
+                                d="M1444.444 666.667h111.111v111.111h-111.111zm111.112 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="none"
+                                d="M1666.667 666.667h111.111v111.111h-111.111zm111.111 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="#eeeeee12" d="M1888.889 666.667H2000v111.111h-111.111z"></path>
+                            <path fill="none" d="M0 777.778h111.111v111.111H0z"></path>
+                            <path fill="#eeeeee68" d="M111.111 777.778h111.111v111.111H111.111z"></path>
+                            <path fill="#eeeeee69" d="M222.222 777.778h111.111v111.111H222.222z"></path>
+                            <path fill="none"
+                                d="M333.333 777.778h111.111v111.111H333.333zm111.111 0h111.111v111.111H444.444zm111.112 0h111.111v111.111H555.556zm111.111 0h111.111v111.111H666.667zm111.111 0h111.111v111.111H777.778zm111.111 0H1000v111.111H888.889z">
+                            </path>
+                            <path fill="#eeeeee46" d="M1000 777.778h111.111v111.111H1000z"></path>
+                            <path fill="none" d="M1111.111 777.778h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeee0d" d="M1222.222 777.778h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeeeda" d="M1333.333 777.778h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeee60" d="M1444.444 777.778h111.111v111.111h-111.111z"></path>
+                            <path fill="none" d="M1555.556 777.778h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeee09" d="M1666.667 777.778h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeee2d" d="M1777.778 777.778h111.111v111.111h-111.111z"></path>
+                            <path fill="none" d="M1888.889 777.778H2000v111.111h-111.111zM0 888.889h111.111V1000H0z">
+                            </path>
+                            <path fill="#eeeeee1b" d="M111.111 888.889h111.111V1000H111.111z"></path>
+                            <path fill="#eeeeee05" d="M222.222 888.889h111.111V1000H222.222z"></path>
+                            <path fill="#eeeeee5d" d="M333.333 888.889h111.111V1000H333.333z"></path>
+                            <path fill="none" d="M444.444 888.889h111.111V1000H444.444z"></path>
+                            <path fill="#eeeeeefd" d="M555.556 888.889h111.111V1000H555.556z"></path>
+                            <path fill="none" d="M666.667 888.889h111.111V1000H666.667z"></path>
+                            <path fill="#eeeeee14" d="M777.778 888.889h111.111V1000H777.778z"></path>
+                            <path fill="#eeeeee2b" d="M888.889 888.889H1000V1000H888.889z"></path>
+                            <path fill="#eeeeee11"
+                                d="M1000 888.889h111.111V1000H1000zm111.111 0h111.111V1000h-111.111z">
+                            </path>
+                            <path fill="none" d="M1222.222 888.889h111.111V1000h-111.111z"></path>
+                            <path fill="#eeeeeecb" d="M1333.333 888.889h111.111V1000h-111.111z"></path>
+                            <path fill="none"
+                                d="M1444.444 888.889h111.111V1000h-111.111zm111.112 0h111.111V1000h-111.111z">
+                            </path>
+                            <path fill="none" d="M1666.667 888.889h111.111V1000h-111.111z"></path>
+                            <path fill="#eeeeee2f" d="M1777.778 888.889h111.111V1000h-111.111z"></path>
+                            <path fill="#eeeeeeec" d="M1888.889 888.889H2000V1000h-111.111z"></path>
+                            <path fill="none"
+                                d="M0 1000h111.111v111.111H0zm111.111 0h111.111v111.111H111.111zm111.111 0h111.111v111.111H222.222zm111.111 0h111.111v111.111H333.333zm111.111 0h111.111v111.111H444.444zm111.112 0h111.111v111.111H555.556z">
+                            </path>
+                            <path fill="#eeeeeef0" d="M666.667 1000h111.111v111.111H666.667z"></path>
+                            <path fill="none"
+                                d="M777.778 1000h111.111v111.111H777.778zm111.111 0H1000v111.111H888.889z">
+                            </path>
+                            <path fill="#eeeeeef0" d="M1000 1000h111.111v111.111H1000z"></path>
+                            <path fill="#eeeeeea8" d="M1111.111 1000h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeeecf" d="M1222.222 1000h111.111v111.111h-111.111z"></path>
+                            <path fill="none" d="M1333.333 1000h111.111v111.111h-111.111z"></path>
+                            <path fill="none" d="M1444.444 1000h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeeede" d="M1555.556 1000h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeee29" d="M1666.667 1000h111.111v111.111h-111.111z"></path>
+                            <path fill="none" d="M1777.778 1000h111.111v111.111h-111.111z"></path>
+                            <path fill="none" d="M1888.889 1000H2000v111.111h-111.111z"></path>
+                            <path fill="#eeeeeefd" d="M0 1111.111h111.111v111.111H0z"></path>
+                            <path fill="#eeeeee48" d="M111.111 1111.111h111.111v111.111H111.111z"></path>
+                            <path fill="none"
+                                d="M222.222 1111.111h111.111v111.111H222.222zm111.111 0h111.111v111.111H333.333zm111.111 0h111.111v111.111H444.444zm111.112 0h111.111v111.111H555.556zm111.111 0h111.111v111.111H666.667z">
+                            </path>
+                            <path fill="#eeeeee6d" d="M777.778 1111.111h111.111v111.111H777.778z"></path>
+                            <path fill="none"
+                                d="M888.889 1111.111H1000v111.111H888.889zm111.111 0h111.111v111.111H1000z">
+                            </path>
+                            <path fill="#eeeeeee4" d="M1111.111 1111.111h111.111v111.111h-111.111z"></path>
+                            <path fill="none"
+                                d="M1222.222 1111.111h111.111v111.111h-111.111zm111.111 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="none"
+                                d="M1444.444 1111.111h111.111v111.111h-111.111zm111.112 0h111.111v111.111h-111.111z">
+                            </path>
+                            <path fill="#eeeeeeb8" d="M1666.667 1111.111h111.111v111.111h-111.111z"></path>
+                            <path fill="none" d="M1777.778 1111.111h111.111v111.111h-111.111z"></path>
+                            <path fill="#eeeeeeea" d="M1888.889 1111.111H2000v111.111h-111.111z"></path>
+                        </g>
+                        <defs>
+                            <radialGradient id="a">
+                                <stop offset="0" stop-color="#fff"></stop>
+                                <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="mx-auto flex max-w-5xl flex-col items-center">
+                    <div class="z-10 flex flex-col items-center gap-6 text-center">
+                        <img src="https://alkhairsociety.co.in/images/islamic_logo-removebg-preview.png" alt="logo"
+                            class="h-16" />
+                        <div
+                            class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground">
+                            AL KHAIR
+                        </div>
+                        <div>
+                            <h1 class="mb-6 text-pretty text-2xl font-bold lg:text-5xl">
+                                Al Khair Bank Loan
+                            </h1>
+                            <p class="text-zinc-600 lg:text-xl">
+                                Welcome to Al Khair Bank, where we believe in providing unparalleled banking services
+                                with a
+                                commitment to ethical and Sharia-compliant financial solutions.
+                            </p>
+                        </div>
+                        <div class="mt-4 flex justify-center gap-2">
+                            <a href="/pages/contact.html">
+                                <button
+                                    class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-zinc-900 text-white hover:bg-zinc-900/90 h-10 px-4 py-2">
+                                    Get Started
+                                </button>
+                            </a>
+                                <button
+                                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-white hover:bg-zinc-100 hover:text-zinc-800 h-10 px-4 py-2">
+                                Learn more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-external-link ml-2 h-4">
+                                    <path d="M15 3h6v6"></path>
+                                    <path d="M10 14 21 3"></path>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 py-12 px-4 md:px-8">
+            <div class="max-w-7xl mx-auto">
+                <!-- Section Heading -->
+                <h2 class="text-center text-2xl md:text-3xl font-bold text-green-700 mb-4">|| About Company ||</h2>
+                <h2 class="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-8">Get to Know About Al Khair
+                    Bank
+                </h2>
+
+                <!-- About Content -->
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Welcome to Al Khair Bank, where we believe in providing unparalleled banking services with a
+                        commitment to ethical and Sharia-compliant financial solutions. Established with a vision to
+                        revolutionize the banking sector, Al Khair Bank is dedicated to fostering growth, trust, and
+                        prosperity for our clients and the communities we serve.
+                    </p>
+
+                    <!-- Mission Section -->
+                    <div class="mb-8">
+                        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Our Mission</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            At Al Khair Bank, our mission is to offer innovative banking solutions that align with
+                            Islamic
+                            principles. We strive to be a leading provider of financial services by ensuring that all
+                            our
+                            operations adhere to the highest standards of Sharia compliance. Our goal is to empower our
+                            customers with financial products that are not only competitive but also ethically sound.
+                        </p>
+                    </div>
+
+                    <!-- Values Section -->
+                    <div>
+                        <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Our Values</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Integrity -->
+                            <div class="bg-green-50 p-6 rounded-lg">
+                                <h4 class="text-xl font-semibold text-green-700 mb-2">Integrity</h4>
+                                <p class="text-gray-600">
+                                    We conduct all our business operations with the utmost integrity and transparency,
+                                    ensuring trust and accountability.
+                                </p>
+                            </div>
+
+                            <!-- Excellence -->
+                            <div class="bg-green-50 p-6 rounded-lg">
+                                <h4 class="text-xl font-semibold text-green-700 mb-2">Excellence</h4>
+                                <p class="text-gray-600">
+                                    We are committed to delivering excellence in every aspect of our services, from
+                                    customer
+                                    interactions to our financial products.
+                                </p>
+                            </div>
+
+                            <!-- Innovation -->
+                            <div class="bg-green-50 p-6 rounded-lg">
+                                <h4 class="text-xl font-semibold text-green-700 mb-2">Innovation</h4>
+                                <p class="text-gray-600">
+                                    We continuously seek to innovate and improve our services to meet the evolving needs
+                                    of
+                                    our clients.
+                                </p>
+                            </div>
+
+                            <!-- Community -->
+                            <div class="bg-green-50 p-6 rounded-lg">
+                                <h4 class="text-xl font-semibold text-green-700 mb-2">Community</h4>
+                                <p class="text-gray-600">
+                                    We believe in contributing positively to the communities we serve by supporting
+                                    various
+                                    social and economic initiatives.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 py-12 px-4 md:px-8">
+            <div class="max-w-7xl mx-auto">
+                <!-- Happy Team Section -->
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Happy Team</h2>
+                    <p class="text-lg md:text-xl text-gray-600 font-semibold">SIMPLE / TRANSPARENT / SECURE</p>
+                </div>
+
+                <!-- Image and Content Section -->
+                <div class="flex flex-col md:flex-row items-center  bg-white p-1">
+                    <!-- Image on the Left -->
+                    <div class="w-full md:w-1/2">
+                        <img src="https://i.pinimg.com/736x/b8/e2/21/b8e221204219fb371cf9a366431c6e31.jpg"
+                            alt="Happy Team" class="w-[800px] h-[250px]  shadow-lg object-cover">
+                    </div>
+
+                    <!-- Get Quick Business Loans Section on the Right -->
+                    <div class="w-full md:w-1/2 h-[250px]  p-6 md:p-8 text-center">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Get Quick Business Loans</h2>
+                        <p class="text-gray-600 mb-6">
+                            Looking for a quick and hassle-free business loan? Al Khair Bank offers flexible and
+                            Sharia-compliant loan solutions tailored to your business needs. Apply now and take your
+                            business to the next level!
+                        </p>
+                        <a href="./contact.html"
+                            class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
+                            Apply For Loan
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="bg-gray-50">
+            <div class="container mx-auto py-24 px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+                <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 max-w-7xl mx-auto">
+                    <div class="flex flex-col p-8 bg-white text-center shadow-lg rounded-xl">
+                        <p class="text-base leading-relaxed text-gray-600 mb-4">
+                            "Al Khair Bank provided excellent service and helped me grow my business with their Islamic banking solutions."
+                        </p>
+                        <div class="mt-auto">
+                            <img alt="Client" class="w-20 h-20 rounded-full mx-auto mb-4"
+                                src="https://randomuser.me/api/portraits/men/1.jpg" />
+                            <h3 class="font-semibold text-gray-800">Ahmed Khan</h3>
+                            <p class="text-sm text-gray-500">Business Owner</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-8 bg-white text-center shadow-lg rounded-xl">
+                        <p class="text-base leading-relaxed text-gray-600 mb-4">
+                            "The team at Al Khair Bank made the loan process simple and straightforward. Highly recommended!"
+                        </p>
+                        <div class="mt-auto">
+                            <img alt="Client" class="w-20 h-20 rounded-full mx-auto mb-4"
+                                src="https://randomuser.me/api/portraits/women/1.jpg" />
+                            <h3 class="font-semibold text-gray-800">Sarah Rahman</h3>
+                            <p class="text-sm text-gray-500">Entrepreneur</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-8 bg-white text-center shadow-lg rounded-xl">
+                        <p class="text-base leading-relaxed text-gray-600 mb-4">
+                            "I appreciate their commitment to Islamic banking principles while providing modern financial solutions."
+                        </p>
+                        <div class="mt-auto">
+                            <img alt="Client" class="w-20 h-20 rounded-full mx-auto mb-4"
+                                src="https://randomuser.me/api/portraits/men/2.jpg" />
+                            <h3 class="font-semibold text-gray-800">Mohammad Ali</h3>
+                            <p class="text-sm text-gray-500">Small Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="bg-gray-100 py-12 px-4 md:px-8">
+            <div class="max-w-7xl mx-auto">
+                <!-- Section Heading -->
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">What They’re Talking About Our
+                    Company</h2>
+                        <!-- Testimonials Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <!-- Testimonial 1 -->
+                            <div class="bg-white rounded-lg shadow-lg p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-2 hover:border-blue-500">
+                                <img src="https://alkhairsociety.co.in/images/testi-1-1.png" alt="Client Testimonial" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Mohammed A</h3>
+                                <p class="text-gray-600 mb-4">Finance Manager</p>
+                                <div class="flex justify-center text-yellow-500 mb-4">
+                                    ★★★★★
+                                </div>
+                                <p class="text-gray-600 italic">
+                                    "I had an excellent experience with our banking services. The process was
+                                    smooth, and the team guided me at every step. Highly recommend them!"
+                                </p>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="bg-white rounded-lg shadow-lg p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-2 hover:border-blue-500">
+                                <img src="https://alkhairsociety.co.in/images/testi-1-2.png" alt="Client Testimonial" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Sara H</h3>
+                                <p class="text-gray-600 mb-4">Finance Manager</p>
+                                <div class="flex justify-center text-yellow-500 mb-4">
+                                    ★★★★★
+                                </div>
+                                <p class="text-gray-600 italic">
+                                    "The bank provided the best loan service I've ever experienced. Their rates are
+                                    competitive, and the customer service is commendable!"
+                                </p>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="bg-white rounded-lg shadow-lg p-6 text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-2 hover:border-blue-500">
+                                <img src="https://alkhairsociety.co.in/images/testi-1-3.png" alt="Client Testimonial" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Omar S</h3>
+                                <p class="text-gray-600 mb-4">Finance Manager</p>
+                                <div class="flex justify-center text-yellow-500 mb-4">
+                                    ★★★★★
+                                </div>
+                                <p class="text-gray-600 italic">
+                                    "The application process was seamless, and I received approval faster than expected.
+                                    Excellent service from our banking team!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="mb-6 md:mb-0">
+                    <img src="https://alkhairsociety.co.in/images/islamic_logo-removebg-preview.png"
+                        alt="Al Khair Bank Logo" class="mb-4 h-16 w-16">
+                    <p class="text-gray-400 text-sm">
+                        Al Khair Bank Islamic. We are a third-party website, our job is to give you the right guidance,
+                        deliver the information in the right way, and give you knowledge leads.
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="text-gray-400 text-sm">
+                        <li class="mb-2">Email: <a href="mailto:needhelp@alkhairbank.org"
+                                class="hover:text-gray-300">needhelp@alkhairbank.org</a></li>
+                        <li class="mb-2">Phone: <a href="tel:8695244673" class="hover:text-gray-300">8695244673</a></li>
+                    </ul>
+                </div>
+
+                <!-- Explore Links -->
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-lg font-semibold mb-4">Explore</h3>
+                    <ul class="text-gray-400 text-sm">
+                        <li class="mb-2"><a href="/index.html" class="hover:text-gray-300">Home</a></li>
+                        <li class="mb-2"><a href="/pages/about.html" class="hover:text-gray-300">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Apply for Loan</a></li>
+                        <li class="mb-2"><a href="/pages/contact.html" class="hover:text-gray-300">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Bank Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Al Khair Bank</h3>
+                    <ul class="text-gray-400 text-sm">
+                        <li class="mb-2"><a href="/pages/alkhairbank.html" class="hover:text-gray-300">Al Khair Islamic Bank</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Al Khair</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Loan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const plus = document.getElementById(`${id}-plus`);
+            const minus = document.getElementById(`${id}-minus`);
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                plus.classList.add('hidden');
+                minus.classList.remove('hidden');
+            } else {
+                content.classList.add('hidden');
+                plus.classList.remove('hidden');
+                minus.classList.add('hidden');
+            }
+        }
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const plusButton = document.getElementById(`${id}-plus`);
+            const minusButton = document.getElementById(`${id}-minus`);
+
+            // Toggle content visibility
+            content.classList.toggle('hidden');
+
+            // Toggle plus and minus buttons
+            plusButton.classList.toggle('hidden');
+            minusButton.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>

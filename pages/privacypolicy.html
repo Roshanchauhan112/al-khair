@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="fixed top-0 w-full z-50 bg-[#FFE4C4] p-2 sm:p-1 md:p-4 lg:p-2">
+            <div class="container mx-auto flex justify-between items-center relative">
+                <div class="text-white text-lg font-bold">
+                    <a href="/index.html">
+                        <img src="https://alkhairsociety.co.in/images/islamic_logo-removebg-preview.png" alt="Logo"
+                            class="w-16 h-16">
+                    </a>
+                </div>
+                <!-- Desktop Navigation -->
+                <div class="hidden font-semibold md:flex space-x-16">
+                    <a href="/index.html" class="text-gray-800 hover:text-gray-700">Home</a>
+                    <a href="/pages/about.html" class="text-gray-800 hover:text-gray-700">About Us</a>
+                    <a href="/pages/alkhairbank.html" class="text-gray-800 hover:text-gray-700">Islamic Bank</a>
+                    <a href="/pages/privacypolicy.html" class="text-gray-800 hover:text-gray-700">Privacy Policy</a>
+                    <a href="/pages/contact.html" class="text-gray-800 hover:text-gray-700">Contact Us</a>
+                </div>
+                <!-- Desktop Button -->
+                <button
+                    class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded md:ml-4 hover:bg-blue-600 transition duration-300">Request
+                    Loan</button>
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 mt-2">
+                    <div class="flex flex-col space-y-2 bg-[#FFE4C4] p-4">
+                        <a href="/index.html" class="text-gray-800 hover:text-gray-700">Home</a>
+                        <a href="/pages/about.html" class="text-gray-800 hover:text-gray-700">About Us</a>
+                        <a href="/pages/alkhairbank.html" class="text-gray-800 hover:text-gray-700">Islamic Bank</a>
+                        <a href="/pages/privacypolicy.html" class="text-gray-800 hover:text-gray-700">Privacy
+                            Policy</a>
+                        <a href="/pages/contact.html" class="text-gray-800 hover:text-gray-700">Contact Us</a>
+                        <button
+                            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Request
+                            Loan</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mt-20 relative">
+        <img src="https://i.pinimg.com/736x/bb/48/b0/bb48b06bbcc5010de72bce0a3a9d5ead.jpg"
+            alt="Privacy Policy Banner Image" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 flex items-center justify-center bg-black w-full h-64 bg-opacity-50">
+            <h1 class="text-4xl md:text-6xl text-[#c9d4d1] font-bold text-center">Privacy Policy</h1>
+        </div>
+    </div>
+
+    <main>
+        <section class="bg-gray-100 py-12  px-4 md:px-8">
+            <div class="max-w-7xl mx-auto">
+                <!-- Privacy Policy Heading -->
+
+                <!-- Introduction -->
+                <div class="p-6 md:p-8 mb-8">
+                    <p class="text-gray-600 text-center leading-relaxed">
+                        At Al Khair Bank, we prioritize the privacy and security of our customers' personal information.
+                        This Privacy Policy outlines how we collect, use, disclose, and protect your information. By
+                        using our services, you agree to the terms of this policy.
+                    </p>
+                </div>
+
+                <!-- Information Collection -->
+                <div class=" p-6 md:p-8 ">
+                    <h3 class="text-2xl font-bold text-[#107B5E] mb-4">Information Collection</h3>
+                    <p class="text-gray-600 mb-4">
+                        Al Khair Bank collects personal information to provide you with the best possible banking
+                        experience. This information includes:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li><strong>Personal Identification Information:</strong> Name, address, date of birth, social
+                            security number, and other identifying details.</li>
+                        <li><strong>Contact Information:</strong> Email address, phone number, and mailing address.</li>
+                        <li><strong>Financial Information:</strong> Account numbers, transaction history, credit
+                            history, and financial status.</li>
+                        <li><strong>Usage Information:</strong> Details on how you interact with our services, including
+                            online banking activities and website usage data.</li>
+                    </ul>
+                </div>
+
+                <!-- Information Use -->
+                <div class=" rounded-lg  p-6 md:p-8 ">
+                    <h3 class="text-2xl font-bold text-[#107B5E] mb-4">Information Use</h3>
+                    <p class="text-gray-600 mb-4">
+                        We use your information to:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li><strong>Provide Services:</strong> Facilitate account management, process transactions, and
+                            offer financial products.</li>
+                        <li><strong>Improve Customer Service:</strong> Respond to your inquiries, support requests, and
+                            provide personalized banking experiences.</li>
+                        <li><strong>Enhance Security:</strong> Detect and prevent fraud, unauthorized transactions, and
+                            other security issues.</li>
+                        <li><strong>Marketing and Communication:</strong> Send promotional materials, updates, and
+                            relevant offers (with your consent).</li>
+                    </ul>
+                </div>
+
+                <!-- Information Sharing -->
+                <div class=" rounded-lg p-6 md:p-8 ">
+                    <h3 class="text-2xl font-bold text-[#107B5E]  mb-4">Information Sharing</h3>
+                    <p class="text-gray-600 mb-4">
+                        Al Khair Bank does not sell, trade, or otherwise transfer your personal information to outside
+                        parties except as outlined below:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li><strong>Service Providers:</strong> We may share information with trusted third-party
+                            service providers who assist us in operating our website, conducting our business, or
+                            servicing you, provided those parties agree to keep this information confidential.</li>
+                        <li><strong>Legal Requirements:</strong> We may disclose your information when required by law
+                            or to protect our rights, property, or safety, and that of our users or others.</li>
+                        <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of
+                            assets, your information may be transferred as part of that transaction.</li>
+                    </ul>
+                </div>
+
+                <!-- Data Security -->
+                <div class="bg-white  p-6 md:p-8">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="md:w-2/3">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Data Security</h3>
+                            <p class="text-gray-600 font-semibold leading-9">
+                                We implement a variety of security measures to maintain the safety of your personal
+                                information.
+                                These include encryption, secure access controls, and regular security assessments to
+                                protect
+                                against unauthorized access, alteration, disclosure, or destruction of your personal
+                                data.
+                            </p>
+                        </div>
+                        <div class="md:w-1/3">
+                            <img src="https://i.pinimg.com/736x/11/f6/87/11f687f7d79be59dd81237245b5a06b1.jpg"
+                                alt="Data Security Illustration" class="w-[300px] h-[250px] object-cover rounded-lg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cookies and Tracking Technologies -->
+                <div class="bg-white  p-6 md:p-8 flex flex-col md:flex-row items-center gap-6">
+                    <!-- Image on the Left -->
+                    <div class="w-full md:w-1/3">
+                        <img src="https://i.pinimg.com/736x/fc/53/59/fc53598fbb610f9f6e1432fdbe8f9bf1.jpg"
+                            alt="Cookies and Tracking Technologies" class="w-full h-48 md:h-64 object-cover rounded-lg">
+                    </div>
+
+                    <!-- Content on the Right -->
+                    <div class="w-full md:w-2/3">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Cookies and Tracking Technologies</h3>
+                        <p class="text-gray-600 font-semibold leading-9">
+                            Al Khair Bank uses cookies and similar tracking technologies to enhance your experience on
+                            our website. Cookies help us understand how you use our site, personalize content, and
+                            improve our services. You can control cookie preferences through your browser settings.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Your Rights -->
+                <div class="p-6 bg-white md:p-8 mb-8">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Your Rights</h3>
+                    <p class="text-gray-600 mb-4">
+                        You have the right to:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li><strong>Access:</strong> Request access to your personal information held by us.</li>
+                        <li><strong>Correct:</strong> Update or correct any inaccurate information.</li>
+                        <li><strong>Delete:</strong> Request the deletion of your personal information, subject to legal
+                            and contractual obligations.</li>
+                        <li><strong>Object:</strong> Object to the processing of your personal information in certain
+                            circumstances.</li>
+                        <li><strong>Withdraw Consent:</strong> Withdraw your consent for us to use your information for
+                            marketing purposes at any time.</li>
+                    </ul>
+                </div>
+
+                <section class="text-gray-600 body-font relative">
+                    <div class="container px-5  mx-auto">
+                        <div class="flex flex-col text-center w-full mb-12">
+                            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
+                            <!-- <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr
+                                hexagon brooklyn asymmetrical gentrify.</p> -->
+                        </div>
+                        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                            <div class="flex flex-wrap -m-2">
+                                <div class="p-2 w-1/2">
+                                    <div class="relative">
+                                        <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                                        <input type="text" id="name" name="name"
+                                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="p-2 w-1/2">
+                                    <div class="relative">
+                                        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                                        <input type="email" id="email" name="email"
+                                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                    </div>
+                                </div>
+                                <div class="p-2 w-full">
+                                    <div class="relative">
+                                        <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                                        <textarea id="message" name="message"
+                                            class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                                    </div>
+                                </div>
+                                <div class="p-2 w-full">
+                                    <button
+                                        class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Us -->
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="mb-6 md:mb-0">
+                    <img src="https://alkhairsociety.co.in/images/islamic_logo-removebg-preview.png"
+                        alt="Al Khair Bank Logo" class="mb-4 h-16 w-16">
+                    <p class="text-gray-400 text-sm">
+                        Al Khair Bank Islamic. We are a third-party website, our job is to give you the right guidance,
+                        deliver the information in the right way, and give you knowledge leads.
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="text-gray-400 text-sm">
+                        <li class="mb-2">Email: <a href="mailto:needhelp@alkhairbank.org"
+                                class="hover:text-gray-300">needhelp@alkhairbank.org</a></li>
+                        <li class="mb-2">Phone: <a href="tel:8695244673" class="hover:text-gray-300">8695244673</a></li>
+                    </ul>
+                </div>
+
+                <!-- Explore Links -->
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-lg font-semibold mb-4">Explore</h3>
+                    <ul class="text-gray-400 text-sm">
+                        <li class="mb-2"><a href="/index.html" class="hover:text-gray-300">Home</a></li>
+                        <a href="/pages/about.html" class="text-gray-800 hover:text-gray-700">About Us</a>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Apply for Loan</a></li>
+                        <li class="mb-2"><a href="/pages/contact.html" class="hover:text-gray-300">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Bank Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Al Khair Bank</h3>
+                    <ul class="text-gray-400 text-sm">
+                        <li class="mb-2"><a href="/pages/alkhairbank.html" class="hover:text-gray-300">Al Khair
+                                Islamic Bank</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Al Khair</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Loan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const plus = document.getElementById(`${id}-plus`);
+            const minus = document.getElementById(`${id}-minus`);
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                plus.classList.add('hidden');
+                minus.classList.remove('hidden');
+            } else {
+                content.classList.add('hidden');
+                plus.classList.remove('hidden');
+                minus.classList.add('hidden');
+            }
+        }
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const plusButton = document.getElementById(`${id}-plus`);
+            const minusButton = document.getElementById(`${id}-minus`);
+
+            // Toggle content visibility
+            content.classList.toggle('hidden');
+
+            // Toggle plus and minus buttons
+            plusButton.classList.toggle('hidden');
+            minusButton.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>

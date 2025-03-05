@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="fixed top-0 w-full z-50 bg-[#FFE4C4] p-2 sm:p-1 md:p-4 lg:p-2">
+            <div class="container mx-auto flex justify-between items-center relative">
+                <div class="text-white text-lg font-bold">
+                    <a href="/index.html">
+                        <img src="https://alkhairsociety.co.in/images/islamic_logo-removebg-preview.png" alt="Logo"
+                            class="w-16 h-16">
+                    </a>
+                </div>
+                <!-- Desktop Navigation -->
+                <div class="hidden font-semibold md:flex space-x-16">
+                    <a href="/index.html" class="text-gray-800 hover:text-gray-700">Home</a>
+                    <a href="/pages/about.html" class="text-gray-800 hover:text-gray-700">About Us</a>
+                    <a href="/pages/alkhairbank.html" class="text-gray-800 hover:text-gray-700">Islamic Bank</a>
+                    <a href="/pages/privacypolicy.html" class="text-gray-800 hover:text-gray-700">Privacy Policy</a>
+                    <a href="/pages/contact.html" class="text-gray-800 hover:text-gray-700">Contact Us</a>
+                </div>
+                <!-- Desktop Button -->
+                <button
+                    class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded md:ml-4 hover:bg-blue-600 transition duration-300">Request
+                    Loan</button>
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 mt-2">
+                    <div class="flex flex-col space-y-2 bg-[#FFE4C4] p-4">
+                        <a href="/index.html" class="text-gray-800 hover:text-gray-700">Home</a>
+                        <a href="/pages/about.html" class="text-gray-800 hover:text-gray-700">About Us</a>
+                        <a href="/pages/alkhairbank.html" class="text-gray-800 hover:text-gray-700">Islamic Bank</a>
+                        <a href="/pages/privacypolicy.html" class="text-gray-800 hover:text-gray-700">Privacy Policy</a>
+                        <a href="/pages/contact.html" class="text-gray-800 hover:text-gray-700">Contact Us</a>
+                        <button
+                            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Request
+                            Loan</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="text-gray-600 body-font">
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                    <img class="object-cover object-center rounded" alt="hero" src="/img.webp">
+                </div>
+                <div class="lg:flex-grow md:w-1/2 lg:pl-24 gap-6 md:pl-16 flex flex-col items-center text-center">
+                    <p class="text-3xl font-semibold pb-2 text-center">|| Al khair Islamic Bank
+                        Loan ||</p>
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 text-center">Welcome to Al
+                        Khair
+                        Islamic Bank
+                    </h1>
+
+                    <p class="mb-8 leading-8 text-center max-w-2xl">In today's world, where ethical and halal
+                        financial practices are
+                        increasingly sought after, Al Khair Islamic Bank stands out as a beacon of trust and integrity.
+                        Committed to providing Sharia-compliant banking solutions, Al Khair Islamic Bank offers a range
+                        of services designed to meet the diverse needs of individuals and businesses. In this article,
+                        we delve into the unique offerings and benefits of banking with Al Khair Islamic Bank.</p>
+                    <div class="flex justify-center w-full"></div>
+                    <a href="./contact.html">
+                        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 
+                            px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                            Request Loan
+                        </button>
+                    </a>
+
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="bg-gray-100 py-12 px-4 md:px-8">
+            <div class="max-w-2xl mx-auto">
+                <!-- Form Heading -->
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">Loan Application Form</h2>
+
+                <!-- Form Container -->
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <form>
+                        <!-- Full Name -->
+                        <div class="mb-6">
+                            <label for="fullName" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+                            <input type="text" id="fullName" placeholder="Enter your full name"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="mb-6">
+                            <label for="phoneNumber" class="block text-gray-700 font-semibold mb-2">Phone Number</label>
+                            <input type="tel" id="phoneNumber" placeholder="Enter your phone number"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+
+                        <!-- Loan Amount -->
+                        <div class="mb-6">
+                            <label for="loanAmount" class="block text-gray-700 font-semibold mb-2">Loan Amount</label>
+                            <input type="number" id="loanAmount" placeholder="Enter loan amount"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+
+                        <!-- State -->
+                        <div class="mb-6">
+                            <label for="state" class="block text-gray-700 font-semibold mb-2">State</label>
+                            <select id="state"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                                <option value="" disabled selected>Select your state</option>
+                                <option value="state1">State 1</option>
+                                <option value="state2">State 2</option>
+                                <option value="state3">State 3</option>
+                            </select>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center">
+                            <button type="submit"
+                                class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 py-12 px-4 md:px-8">
+            <div class="max-w-7xl mx-auto">
+                <!-- Islamic Banking Section -->
+                <div
+                    class="bg-white rounded-lg shadow-lg p-6 md:p-8 mb-12 flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">What is Islamic Banking?</h2>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Islamic banking, also known as Sharia-compliant banking, adheres to the principles of
+                            Islamic
+                            law (Sharia). These principles prohibit the collection and payment of interest (riba),
+                            promote
+                            risk-sharing, and ensure that all transactions are based on tangible assets or services. Al
+                            Khair Islamic Bank is dedicated to upholding these values, ensuring that your financial
+                            dealings
+                            are ethical and compliant with Islamic teachings.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://i.pinimg.com/736x/70/90/71/70907126e703b695b1e56fe9c099ee70.jpg"
+                            alt="Islamic Banking" class="rounded-lg shadow-md w-full h-96 object-cover">
+                    </div>
+                </div>
+
+                <!-- Why Choose Al Khair Islamic Bank Section -->
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Why Choose Al Khair Islamic Bank?</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Sharia-Compliant Services -->
+                        <div class="bg-green-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold text-green-700 mb-2">Sharia-Compliant Services</h3>
+                            <p class="text-gray-600">Comprehensive financial products designed to align with Islamic
+                                principles.</p>
+                        </div>
+
+                        <!-- Personal Banking -->
+                        <div class="bg-green-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold text-green-700 mb-2">Personal Banking</h3>
+                            <p class="text-gray-600">Tailored savings and investment solutions with personalized
+                                assistance.</p>
+                        </div>
+
+                        <!-- Business Solutions -->
+                        <div class="bg-green-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold text-green-700 mb-2">Business Solutions</h3>
+                            <p class="text-gray-600">Financial solutions that promote growth and sustainability.</p>
+                        </div>
+
+                        <!-- Ethical Investments -->
+                        <div class="bg-green-50 p-6 rounded-lg"></div>
+                        <h3 class="text-xl font-semibold text-green-700 mb-2">Ethical Investments</h3>
+                        <p class="text-gray-600">Profitable yet socially responsible investment opportunities.</p>
+                    </div>
+
+                    <!-- Community Focused -->
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-green-700 mb-2">Community Focused</h3>
+                        <p class="text-gray-600">Initiatives that positively impact society.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 py-12 px-4 md:px-8">
+            <div class="max-w-7xl mx-auto">
+                <!-- Section Heading -->
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">Our Services</h2>
+
+                <!-- Services Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <!-- Savings and Current Accounts -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-2 hover:border-blue-500">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Savings and Current Accounts</h3>
+                        <p class="text-gray-600">Secure and Sharia-compliant accounts for daily needs.</p>
+                    </div>
+
+                    <!-- Investment Accounts -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-2 hover:border-blue-500">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Investment Accounts</h3>
+                        <p class="text-gray-600">Ethical investment opportunities to grow your wealth.</p>
+                    </div>
+
+                    <!-- Home Financing -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-2 hover:border-blue-500">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Home Financing</h3>
+                        <p class="text-gray-600">Affordable options for owning your dream home.</p>
+                    </div>
+
+                    <!-- Business Financing -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-2 hover:border-blue-500">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Business Financing</h3>
+                        <p class="text-gray-600">Customized solutions for your business ventures.</p>
+                    </div>
+
+                    <!-- Digital Banking -->
+                    <div
+                        class="bg-white rounded-lg shadow-lg p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:border-2 hover:border-blue-500">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Digital Banking</h3>
+                        <p class="text-gray-600">Convenient online and mobile banking services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-green-600 py-12 px-4 md:px-8">
+            <div class="max-w-7xl mx-auto text-center">
+                <!-- Section Heading -->
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Join Us Today</h2>
+
+                <!-- Section Description -->
+                <p class="text-lg md:text-xl text-white mb-8">
+                    Experience the difference of banking with a financial institution that values ethics and integrity.
+                    Join Al Khair Islamic Bank today and take advantage of our Sharia-compliant financial services.
+                    Visit our website or contact us to learn more.
+                </p>
+
+                <!-- Call-to-Action Buttons -->
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="#"
+                        class="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition duration-300">
+                        Visit Our Website
+                    </a>
+                    <a href="/pages/contact.html"
+                        class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-600 transition duration-300">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="mb-6 md:mb-0">
+                    <img src="https://alkhairsociety.co.in/images/islamic_logo-removebg-preview.png"
+                        alt="Al Khair Bank Logo" class="mb-4 h-16 w-16">
+                    <p class="text-gray-400 text-sm">
+                        Al Khair Bank Islamic. We are a third-party website, our job is to give you the right guidance,
+                        deliver the information in the right way, and give you knowledge leads.
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-lg font-semibold mb-4"><a href="/pages/contact.html">Contact Us</a></h3>
+                    <ul class="text-gray-400 text-sm">
+                        <li class="mb-2">Email: <a href="mailto:needhelp@alkhairbank.org"
+                                class="hover:text-gray-300">needhelp@alkhairbank.org</a></li>
+                        <li class="mb-2">Phone: <a href="tel:8695244673" class="hover:text-gray-300">8695244673</a></li>
+                    </ul>
+                </div>
+
+                <!-- Explore Links -->
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-lg font-semibold mb-4">Explore</h3>
+                    <ul class="text-gray-400 text-sm">
+                        <li class="mb-2"><a href="/index.html" class="hover:text-gray-300">Home</a></li>
+                        <a href="/pages/about.html" class="text-gray-800 hover:text-gray-700">About Us</a>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Apply for Loan</a></li>
+                        <li class="mb-2"><a href="/pages/contact.html" class="hover:text-gray-300">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Bank Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Al Khair Bank</h3>
+                    <ul class="text-gray-400 text-sm">
+                        <li class="mb-2"><a href="/pages/alkhairbank.html" class="hover:text-gray-300">Al Khair
+                                Islamic Bank</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Al Khair</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Loan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const plus = document.getElementById(`${id}-plus`);
+            const minus = document.getElementById(`${id}-minus`);
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                plus.classList.add('hidden');
+                minus.classList.remove('hidden');
+            } else {
+                content.classList.add('hidden');
+                plus.classList.remove('hidden');
+                minus.classList.add('hidden');
+            }
+        }
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const plusButton = document.getElementById(`${id}-plus`);
+            const minusButton = document.getElementById(`${id}-minus`);
+
+            // Toggle content visibility
+            content.classList.toggle('hidden');
+
+            // Toggle plus and minus buttons
+            plusButton.classList.toggle('hidden');
+            minusButton.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>

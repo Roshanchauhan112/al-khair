@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="fixed top-0 w-full z-50 bg-[#FFE4C4] p-2 shadow-lg sm:p-1 md:p-4 lg:p-2">
+            <div class="container mx-auto flex justify-between items-center relative">
+                <div class="text-white text-lg font-bold">
+                    <a href="/index.html">
+                        <img src="https://alkhairsociety.co.in/images/islamic_logo-removebg-preview.png" alt="Logo"
+                            class="w-16 h-16">
+                    </a>
+                </div>
+                <!-- Desktop Navigation -->
+                <div class="hidden font-semibold md:flex space-x-16">
+                    <a href="/index.html" class="text-gray-800 hover:text-gray-700">Home</a>
+                    <a href="/pages/about.html" class="text-gray-800 hover:text-gray-700">About Us</a>
+                    <a href="/pages/alkhairbank.html" class="text-gray-800 hover:text-gray-700">Islamic Bank</a>
+                    <a href="/pages/privacypolicy.html" class="text-gray-800 hover:text-gray-700">Privacy Policy</a>
+                    <a href="/pages/contact.html" class="text-gray-800 hover:text-gray-700">Contact Us</a>
+                </div>
+                <!-- Desktop Button -->
+                <button
+                    class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded md:ml-4 hover:bg-blue-600 transition duration-300">Request
+                    Loan</button>
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-900 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 mt-2">
+                    <div class="flex flex-col space-y-2 bg-[#FFE4C4] p-4">
+                        <a href="/index.html" class="text-gray-800 hover:text-gray-700">Home</a>
+                        <a href="/pages/about.html" class="text-gray-800 hover:text-gray-700">About Us</a>
+                        <a href="/pages/alkhairbank.html" class="text-gray-800 hover:text-gray-700">Islamic Bank</a>
+                        <a href="/pages/privacypolicy.html" class="text-gray-800 hover:text-gray-700">Privacy
+                            Policy</a>
+                        <a href="/pages/contact.html" class="text-gray-800 hover:text-gray-700">Contact Us</a>
+                        <button
+                            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Request
+                            Loan</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mt-20 relative">
+        <img src="https://i.pinimg.com/736x/95/ca/df/95cadf8aef7ac650b813d427dfc27bde.jpg"
+            alt="Privacy Policy Banner Image" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 flex items-center justify-center bg-black w-full h-64 bg-opacity-50">
+            <h1 class="text-4xl md:text-6xl text-[#c9d4d1] font-bold text-center">Contact Us</h1>
+        </div>
+    </div>
+
+
+    <main>
+        <section class="bg-gray-100 py-12 px-4 md:px-8">
+            <div class="max-w-2xl mx-auto">
+                <!-- Form Heading -->
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">Alkhair Bank Loan Contact</h2>
+
+                <!-- Form Container -->
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <form>
+                        <!-- Full Name and Mobile Number (Side by Side) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="fullName" class="block text-gray-700 font-semibold mb-2">Full Name*</label>
+                                <input type="text" id="fullName" placeholder="Enter your full name"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="mobileNumber" class="block text-gray-700 font-semibold mb-2">Mobile
+                                    Number*</label>
+                                <input type="tel" id="mobileNumber" placeholder="Enter your mobile number"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                        </div>
+
+                        <!-- Email ID and WhatsApp Number (Side by Side) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="email" class="block text-gray-700 font-semibold mb-2">Email ID*</label>
+                                <input type="email" id="email" placeholder="Enter your email"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="whatsappNumber" class="block text-gray-700 font-semibold mb-2">WhatsApp
+                                    Number</label>
+                                <input type="tel" id="whatsappNumber" placeholder="Enter your WhatsApp number"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                        </div>
+
+                        <!-- Aadhaar Card Number and PAN Card Number (Side by Side) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="aadhaarNumber" class="block text-gray-700 font-semibold mb-2">Aadhaar Card
+                                    Number*</label>
+                                <input type="text" id="aadhaarNumber" placeholder="Enter your Aadhaar card number"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="panNumber" class="block text-gray-700 font-semibold mb-2">PAN Card
+                                    Number*</label>
+                                <input type="text" id="panNumber" placeholder="Enter your PAN card number"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                        </div>
+
+                        <!-- Bank Name and Bank Account Number (Side by Side) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="bankName" class="block text-gray-700 font-semibold mb-2">Bank Name*</label>
+                                <input type="text" id="bankName" placeholder="Enter your bank name"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="accountNumber" class="block text-gray-700 font-semibold mb-2">Bank Account
+                                    Number*</label>
+                                <input type="text" id="accountNumber" placeholder="Enter your bank account number"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                        </div>
+
+                        <!-- IFSC Code and Loan Amount (Side by Side) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="ifscCode" class="block text-gray-700 font-semibold mb-2">IFSC Code*</label>
+                                <input type="text" id="ifscCode" placeholder="Enter your IFSC code"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="loanAmount" class="block text-gray-700 font-semibold mb-2">Loan
+                                    Amount*</label>
+                                <input type="number" id="loanAmount" placeholder="50000"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                        </div>
+
+                        <!-- Loan Type and Loan Period (Side by Side) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="loanType" class="block text-gray-700 font-semibold mb-2">Loan Type*</label>
+                                <select id="loanType"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="personal">Personal Loan</option>
+                                    <option value="home">Home Loan</option>
+                                    <option value="business">Business Loan</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="loanPeriod" class="block text-gray-700 font-semibold mb-2">Loan
+                                    Period*</label>
+                                <select id="loanPeriod"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="6">6 Months</option>
+                                    <option value="12">1 Year</option>
+                                    <option value="24">2 Years</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- State and Address (Full Width) -->
+                        <div class="mb-6">
+                            <label for="state" class="block text-gray-700 font-semibold mb-2">State*</label>
+                            <select id="state"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                                <option value="" disabled selected>Select</option>
+                                <option value="state1">State 1</option>
+                                <option value="state2">State 2</option>
+                                <option value="state3">State 3</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label for="address" class="block text-gray-700 font-semibold mb-2">Address*</label>
+                            <textarea id="address" placeholder="Enter your address"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center">
+                            <button type="submit"
+                                class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
+                                Submit Now
+                            </button>
+                        </div>
+
+                        <!-- Note -->
+                        <p class="text-gray-600 text-center mt-4">
+                            After submitting your AlKhair Bank loan requirement form, kindly wait a few hours. Our C.R.O
+                            will contact you.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 py-12 px-4 md:px-8">
+            <div class="max-w-7xl mx-auto">
+                <!-- Heading and Subtitle -->
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Feel free to get in touch</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        At Al Khair Bank, we are dedicated to providing exceptional customer service and support.
+                        Whether you have a question about our services, need assistance with your account, or want to
+                        provide feedback, we are here to help.
+                    </p>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="flex justify-center gap-6 mb-8">
+                    <a href="#" class="text-gray-600 hover:text-blue-500 transition duration-300">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500 transition duration-300">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500 transition duration-300">
+                        <i class="fab fa-pinterest text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500 transition duration-300">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                </div>
+
+                <!-- Conclusion -->
+                <div class=" p-6 md:p-8 mb-8 text-center">
+                    <h3 class="text-4xl font-bold text-gray-800 mb-4">Conclusion</h3>
+                    <p class="text-gray-600">
+                        Having Al Khair Bank's contact number, <strong class="text-green-600">8695244673</strong>, at
+                        your fingertips ensures you can quickly and easily get the support you need.
+                        Whether it's a simple account query or a more complex banking issue, their dedicated customer
+                        care team is always ready to assist.
+                    </p>
+                </div>
+
+                <!-- Contact Info Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Phone Card -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                        <i class="fas fa-phone text-4xl text-green-600 mb-4"></i>
+                        <p class="text-gray-600 mb-2">Have any question?</p>
+                        <strong class="text-gray-800">918695244673</strong>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                        <i class="fas fa-envelope text-4xl text-green-600 mb-4"></i>
+                        <p class="text-gray-600 mb-2">Write us email</p>
+                        <strong class="text-gray-800">support@alkhairbank.org</strong>
+                    </div>
+
+                    <!-- Location Card -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                        <i class="fas fa-map-marker-alt text-4xl text-green-600 mb-4"></i>
+                        <p class="text-gray-600 mb-2">Visit anytime</p>
+                        <strong class="text-gray-800">Islamic Center Building, Yunus Colony, Mumbai, India</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="mb-6 md:mb-0">
+                    <img src="https://alkhairsociety.co.in/images/islamic_logo-removebg-preview.png"
+                        alt="Al Khair Bank Logo" class="mb-4 h-16 w-16">
+                    <p class="text-gray-400 text-sm">
+                        Al Khair Bank Islamic. We are a third-party website, our job is to give you the right guidance,
+                        deliver the information in the right way, and give you knowledge leads.
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul class="text-gray-400 text-sm">
+                        <li class="mb-2">Email: <a href="mailto:needhelp@alkhairbank.org"
+                                class="hover:text-gray-300">needhelp@alkhairbank.org</a></li>
+                        <li class="mb-2">Phone: <a href="tel:8695244673" class="hover:text-gray-300">8695244673</a></li>
+                    </ul>
+                </div>
+
+                <!-- Explore Links -->
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-lg font-semibold mb-4">Explore</h3>
+                    <ul class="text-gray-400 text-sm">
+                        <li class="mb-2"><a href="/index.html" class="hover:text-gray-300">Home</a></li>
+                        <a href="/pages/about.html" class="text-gray-800 hover:text-gray-700">About Us</a>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Apply for Loan</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Bank Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Al Khair Bank</h3>
+                    <ul class="text-gray-400 text-sm">
+                        <li class="mb-2"><a href="/pages/alkhairbank.html" class="hover:text-gray-300">Al Khair
+                                Islamic Bank</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Al Khair</a></li>
+                        <li class="mb-2"><a href="#" class="hover:text-gray-300">Loan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const plus = document.getElementById(`${id}-plus`);
+            const minus = document.getElementById(`${id}-minus`);
+
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                plus.classList.add('hidden');
+                minus.classList.remove('hidden');
+            } else {
+                content.classList.add('hidden');
+                plus.classList.remove('hidden');
+                minus.classList.add('hidden');
+            }
+        }
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            const plusButton = document.getElementById(`${id}-plus`);
+            const minusButton = document.getElementById(`${id}-minus`);
+
+            // Toggle content visibility
+            content.classList.toggle('hidden');
+
+            // Toggle plus and minus buttons
+            plusButton.classList.toggle('hidden');
+            minusButton.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
